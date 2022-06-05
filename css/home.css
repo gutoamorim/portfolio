@@ -10,6 +10,7 @@
 .home-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .home-content .text-1 {
@@ -28,24 +29,22 @@
 }
 
 .home-content .text-3 span {
-  /* color: #bd93f9; */
-  color: #48D06D;
-  /* color: #FF79C6; */
+  color: var(--green);
   font-weight: 500;
 }
 
 .home-content a {
   display: inline-block;
-  background: #48D06D;
+  background: var(--green);
   font-size: 18px;
   padding: 12px 36px;
   border-radius: 6px;
-  color: #282a36;
+  color: var(--purple-3);
   margin-top: 20px;
-  border: 2px solid #48D06D;
+  border: 2px solid var(--green);
 }
 
 .home-content a:hover {
-  color: #bd93f9;
+  color: var(--green);
   background: none;
 }

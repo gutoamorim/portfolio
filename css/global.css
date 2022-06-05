@@ -24,8 +24,13 @@ img {
   display: block;
 }
 
+section {
+  width: 100%;
+}
+
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
 }
+
