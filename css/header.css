@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 15px 0;
+  transition: all .6s ease;
+  z-index: 9998;
+}
+
+header.stick {
+  background-color: #48D06D;
+}
+
+header.stick .logo a span,
+header.stick  nav li a:hover {
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  z-index: 9999;
+}
+
+header .logo a {
+  color: #fff;
+  font-size: 2.1875em;
+  font-weight: 500;
+}
+
+header .logo a span {
+  /* color: #bd93f9; */
+  color: #48D06D;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5625rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  /* color: #bd93f9; */
+  color: #48D06D;
+}
+
+/* menu mobile */
+#btn-mobile {
+  display: none;
+}

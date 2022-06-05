@@ -1,0 +1,78 @@
+
+.about {
+  font-family: 'Roboto';
+}
+
+.about .container {
+  padding: 100px 0;
+}
+
+.about .title {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  content: "Quem sou eu";
+  position: absolute;
+  bottom:-12px;
+  left: 50%;
+  font-size: 20px;
+  color: var(--green);
+  background-color: #fff;
+  padding: 5px;
+  transform: translateX(-50%);
+}
+
+.about .about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about-text-content {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-text-content span{
+  color: #48D06D;
+}
+
+.about-text p {
+  text-align: justify;
+}
+
+.about-text a {
+  display: inline-block;
+  background-color: #48D06D;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 30px;
+}

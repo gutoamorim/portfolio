@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  background-color: var(--purple-3);
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.home-content .text-1 {
+  font-size: 1.6875rem;
+}
+
+.home-content .text-2 {
+  font-size: 4.6875rem;
+  font-weight: 500;
+  margin-left: -3px;
+}
+
+.home-content .text-3 {
+  font-size: 2.5rem;
+  margin: 5px 0;
+}
+
+.home-content .text-3 span {
+  /* color: #bd93f9; */
+  color: #48D06D;
+  /* color: #FF79C6; */
+  font-weight: 500;
+}
+
+.home-content a {
+  display: inline-block;
+  background: #48D06D;
+  font-size: 18px;
+  padding: 12px 36px;
+  border-radius: 6px;
+  color: #282a36;
+  margin-top: 20px;
+  border: 2px solid #48D06D;
+}
+
+.home-content a:hover {
+  color: #bd93f9;
+  background: none;
+}
