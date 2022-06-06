@@ -48,3 +48,49 @@
   color: var(--color-p1);
   background: none;
 }
+
+@media (max-width: 995px) {
+  .home-content .text-2 {
+    font-size: 4rem;
+  }
+
+  .home-content .text-3 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-content .text-2 {
+    font-size: 4rem;
+  }
+
+  .home-content .text-3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 695px) {
+  .home-content {
+    grid-template-columns: 1fr;
+  } 
+
+  .home-content .home-image {
+    grid-row: 1;
+  }
+
+  .home-content img {
+    height: 300px;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 530px) {
+  .home-content .text-2 {
+    font-size: 3rem;
+  }
+
+  .home-content .text-3 {
+    font-size: 1.35rem;
+  }
+}
