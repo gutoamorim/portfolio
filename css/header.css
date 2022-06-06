@@ -3,17 +3,18 @@ header {
   top: 0;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  padding: 15px 0;
-  transition: all .6s ease;
+  padding: 1rem 0;
+  transition: all 0.6s ease;
   z-index: 9998;
+  height: 70px;
 }
 
 header.stick {
-  background-color: var(--green);
+  background-color: var(--color-p1);
 }
 
 header.stick .logo a span,
-header.stick  nav li a:hover {
+header.stick nav li a:hover {
   color: #fff;
 }
 
@@ -31,7 +32,7 @@ header .logo a {
 
 header .logo a span {
   /* color: #bd93f9; */
-  color: var(--green);
+  color: var(--color-p1);
 }
 
 nav ul {
@@ -52,5 +53,80 @@ nav li a {
 
 nav li a:hover {
   /* color: #bd93f9; */
-  color: #48D06D;
+  color: #48d06d;
+}
+
+/* btn-mobile */
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: var(--color-3);
+    padding: 1rem;
+    transition: .6s;
+    z-index: 9999;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  nav.active .menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+  }
+
+  .menu a {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(56, 58, 89, 1);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1em;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburguer {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+    color: var(--color-p1);
+  }
+
+  #hamburguer::before,
+  #hamburguer::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #48d06d;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  nav.active #hamburguer {
+    border-top: transparent;
+  }
+
+  nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+
 }

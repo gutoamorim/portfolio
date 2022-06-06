@@ -1,4 +1,3 @@
-
 .about {
   font-family: 'Roboto';
 }
@@ -18,7 +17,7 @@
 }
 
 .about .title::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -29,12 +28,12 @@
 }
 
 .about .title::after {
-  content: "Quem sou eu";
+  content: 'Quem sou eu';
   position: absolute;
-  bottom:-12px;
+  bottom: -12px;
   left: 50%;
   font-size: 20px;
-  color: var(--green);
+  color: var(--color-p1);
   background-color: #fff;
   padding: 5px;
   transform: translateX(-50%);
@@ -61,8 +60,8 @@
   margin-bottom: 10px;
 }
 
-.about-text-content span{
-  color: #48D06D;
+.about-text-content span {
+  color: #48d06d;
 }
 
 .about-text p {
@@ -71,7 +70,7 @@
 
 .about-text a {
   display: inline-block;
-  background-color: #48D06D;
+  background-color: #48d06d;
   color: #fff;
   font-size: 20px;
   padding: 10px 30px;
