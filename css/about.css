@@ -1,9 +1,5 @@
 .about {
-  font-family: 'Roboto';
-}
-
-.about .container {
-  padding: 100px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .about .title {
@@ -39,10 +35,10 @@
   transform: translateX(-50%);
 }
 
-.about .about-content {
+.about-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
 }
@@ -66,12 +62,15 @@
 
 .about-text p {
   text-align: justify;
+  margin-bottom : 1.25rem;
 }
 
-.about-text a {
-  display: inline-block;
-  background-color: #48d06d;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px 30px;
+@media(max-width: 790px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content .about-image {
+    justify-self: center;
+  }
 }

@@ -103,13 +103,17 @@ nav li a:hover {
     color: var(--color-p1);
   }
 
+  header.stick #hamburguer {
+    color: #fff;
+  }
+
   #hamburguer::before,
   #hamburguer::after {
     content: "";
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #48d06d;
+    background-color: currentColor;
     margin-top: 5px;
     transition: .3s;
     position: relative;

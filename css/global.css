@@ -33,3 +33,23 @@ section {
   margin: auto;
   padding: 0 1rem;
 }
+
+section{
+  padding: 100px 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--color-p1);
+  font-size: 18px;
+  padding: 12px 36px;
+  border-radius: 6px;
+  color: #fff;
+  margin-top: 20px;
+  border: 2px solid var(--color-p1);
+}
+
+.button:hover {
+  color: var(--color-p1);
+  background: none;
+}
