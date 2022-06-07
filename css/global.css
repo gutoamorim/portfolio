@@ -26,6 +26,14 @@ img {
   display: block;
 }
 
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
 section {
   width: 100%;
 }
@@ -33,7 +41,7 @@ section {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -50,9 +58,16 @@ section{
   color: #fff;
   margin-top: 20px;
   border: 2px solid var(--color-p1);
+  max-width: max-content;
 }
 
 .button:hover {
   color: var(--color-p1);
   background: none;
+}
+
+@media (max-width: 650px){
+  section{
+    padding: 50px 0;
+  }
 }
