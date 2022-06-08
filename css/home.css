@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  background-color: var(--color-3);
+  background-color: var(--color-1);
   height: 100vh;
   color: #fff;
   min-height: 500px;
