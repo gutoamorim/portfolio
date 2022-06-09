@@ -4,9 +4,18 @@ $(document).ready(function(){
       $('header').addClass("stick");
     }else {
       $('header').removeClass("stick");
+    }if(this.scrollY > 500) {
+      $('.scroll-up-btn').addClass("show")
+    }else {
+      $('.scroll-up-btn').removeClass("show")
     }
   })
 });
+
+$('.scroll-up-btn').click(function() {
+  $('html').animate({scrollTop: 0})
+})
+
 
 const btnMobile = document.querySelector('#btn-mobile')
 
