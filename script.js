@@ -16,6 +16,13 @@ $('.scroll-up-btn').click(function() {
   $('html').animate({scrollTop: 0})
 })
 
+var typed = new Typed(".typing", {
+  strings:["Front-end web development", "Back-end student", "Freelancer"],
+  typeSpeed:100,
+  backSpeed: 60,
+  loop: true
+})
+
 
 const btnMobile = document.querySelector('#btn-mobile')
 
