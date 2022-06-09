@@ -48,7 +48,7 @@ section {
 }
 
 section{
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .button {
@@ -67,6 +67,41 @@ section{
   color: var(--color-p1);
   background: none;
 }
+
+
+
+section .title {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+section .title::before {
+  content: '';
+  position: absolute; 
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: var(--color-p1);
+  background-color: var(--color-2);
+  padding: 5px;
+  transform: translateX(-50%);
+}
+
 
 @media (max-width: 650px){
   section{
