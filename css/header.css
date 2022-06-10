@@ -10,13 +10,12 @@ header {
 }
 
 header.stick {
-  background-color: var(--color-p3);
+  background-color: var(--color-1);
 }
 
 header.stick .logo a,
-header.stick .logo a span,
 header.stick nav li a:hover {
-  color: var(--color-p0);
+  color: var(--color-p0 );
 }
 
 header .container {
@@ -27,7 +26,7 @@ header .container {
 
 header .logo a {
   color: var(--color-p0);
-  font-size: 2.1875em;
+  font-size: 2.1875rem;
   font-weight: 500;
 }
 
@@ -61,23 +60,28 @@ nav li a:hover {
 }
 
 @media (max-width: 650px) {
+  header {
+    height: 50px;
+    padding: 0.5rem;
+  }
+  
   .menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 50px;
     right: 0px;
-    background-color: var(--color-3);
+    background-color: var(--color-1);
     padding: 1rem;
     transition: .6s;
-    z-index: 9999;
+    z-index: 2;
     height: 0;
     visibility: hidden;
     overflow-y: hidden;
   }
 
   nav.active .menu {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     visibility: visible;
   }
 
@@ -103,7 +107,7 @@ nav li a:hover {
   }
 
   header.stick #hamburguer {
-    color: #fff;
+    color: var(--color-p1);
   }
 
   #hamburguer::before,

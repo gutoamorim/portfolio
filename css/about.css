@@ -2,40 +2,11 @@
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-2);
   color: var(--color-p0);
-  /* max-height: 100vh; */
 }
 
-/* .about .title {
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.about .title::before {
-  content: '';
-  position: absolute; 
-  bottom: 0;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #fff;
-  transform: translateX(-50%);
-} */
 
 .about .title::after {
   content: 'Quem sou eu';
-  /* position: absolute;
-  bottom: -12px;
-  left: 50%;
-  font-size: 20px;
-  color: var(--color-p1);
-  background-color: var(--color-2);
-  padding: 5px;
-  transform: translateX(-50%); */
 }
 
 .about-content {
@@ -56,11 +27,15 @@ ul.about-social{
   justify-content: space-between;
 }
 
-.about-social img{
+ul.about-social ion-icon{
   color: var(--color-p0);
-  fill: var(--color-p0);
 }
-.about-social li img {
+
+ul.about-social ion-icon:hover{
+  color: var(--color-p1);
+}
+
+.about-social li ion-icon {
   width: 45px;
   height: 45px;
 }
@@ -104,7 +79,7 @@ ul.about-social{
 }
 
 .skills li img {
-  height: 4rem;
+  height: 3rem;
 }
 
 .about-content-right a.button{
