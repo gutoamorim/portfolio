@@ -35,7 +35,6 @@ section.projects .title::after {
 .card-content {
   padding: 1rem;
   color: var(--color-p0);
-  text-align: justify;
 }
 
 .card-content ul {
@@ -53,5 +52,4 @@ section.projects .title::after {
 
 .card-content p {
   margin-top: 15px;
-  line-height: 1.5;
 }
