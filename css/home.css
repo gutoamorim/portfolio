@@ -2,7 +2,7 @@
   display: flex;
   background-color: var(--color-1);
   height: 100vh;
-  color: #fff;
+  color: var(--color-p0);
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
   padding: 150px 0;

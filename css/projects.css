@@ -1,5 +1,5 @@
 .projects {
-  color: #fff;
+  color: var(--color-p0);
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-3);
 }
@@ -20,19 +20,19 @@ section.projects .title::after {
 
 .card {
   background-color: var(--color-2);
-  border: solid 1px var(--color-p1);
+  border: solid 1px var(--color-p3);
 }
 
 .card h3 {
-  color: var(--color-2);
-  background-color: var(--color-p1);
+  color: var(--color-p0);
+  background-color: var(--color-p3);
   padding: 5px;
   text-align: center;
   font-weight: 600;
 }
 .card-content {
   padding: 1rem;
-  color: #fff;
+  color: var(--color-p0);
   text-align: justify;
 }
 

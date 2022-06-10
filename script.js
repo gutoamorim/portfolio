@@ -17,7 +17,7 @@ $('.scroll-up-btn').click(function() {
 })
 
 var typed = new Typed(".typing", {
-  strings:["Front-end web development", "Back-end student", "Freelancer"],
+  strings:["Front-end development", "Back-end student", "Freelancer"],
   typeSpeed:100,
   backSpeed: 60,
   loop: true
