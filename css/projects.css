@@ -13,12 +13,14 @@ section.projects .title::after {
 }
 
 .projects-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
 }
 
 .card {
+  max-width: 350px;
   background-color: var(--color-2);
   border: solid 1px var(--color-p3);
 }
@@ -53,6 +55,3 @@ section.projects .title::after {
   margin-top: 15px;
   line-height: 1.5;
 }
-
-
-@media()
