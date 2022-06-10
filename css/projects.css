@@ -14,7 +14,7 @@ section.projects .title::after {
 
 .projects-content {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
@@ -37,8 +37,10 @@ section.projects .title::after {
 }
 
 .card-content ul {
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 15px;
+  gap: 5px;
 }
 
 .card-content li {
@@ -53,3 +55,4 @@ section.projects .title::after {
 }
 
 
+@media()
