@@ -22,15 +22,16 @@ section.projects .title::after {
 .card {
   max-width: 350px;
   background-color: var(--color-2);
-  border: solid 1px var(--color-p3);
+  border: solid 1px var(--color-p2);
 }
 
 .card h3 {
-  color: var(--color-p0);
-  background-color: var(--color-p3);
+  color: var(--color-1);
+  background-color: var(--color-p2);
   padding: 5px;
   text-align: center;
   font-weight: 600;
+  letter-spacing: 3px;
 }
 .card-content {
   padding: 1rem;

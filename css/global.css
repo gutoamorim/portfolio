@@ -2,11 +2,15 @@
   --color-1: #201b2c;
   --color-2: #2f2841;
   --color-3: #514869;
+  --color-4: #9457F0;
+  --color-5: #8C3FF1;
+  --color-6: #B491FF;
   --color-p0: #f0ffffde;
   --color-p1: #77ffc0;
   --color-p2: #00ff88;
   --color-p3: #48d06d;
   --color-p4: #00CC66;
+  --color-p5: #22ee00;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
@@ -119,7 +123,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: #fff;
+  background: var(--color-p0);
   transform: translateX(-50%);
 }
 
