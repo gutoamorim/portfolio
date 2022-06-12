@@ -25,12 +25,24 @@ var typed = new Typed(".typing", {
 
 
 const btnMobile = document.querySelector('#btn-mobile')
+const nav = document.querySelector('nav')
 
 function toggleMenu(event) {
   if(event.type === 'touchstart') event.preventDefault()
-  const nav = document.querySelector('nav')
   nav.classList.toggle('active')
 }
 
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
+
+const section = document.querySelectorAll('.section')
+
+function closeMenu() {
+  nav.classList.toggle('active')
+}
+
+function navigateSection (section) {
+  section.addEventListener('click', closeMenu)
+}
+
+section.forEach(navigateSection)
