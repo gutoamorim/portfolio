@@ -6,14 +6,14 @@
   content: 'fale comigo';
 }
 
-.contact-content {
+.contact .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
 
-.left-contact {
+.contact-left {
   padding: 30px;
 }
 
@@ -122,7 +122,6 @@
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
-
 
 @media(max-width: 900px){
   .contact-content {

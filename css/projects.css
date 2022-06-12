@@ -1,6 +1,4 @@
 .projects {
-  color: var(--color-p0);
-  font-family: 'Roboto', sans-serif;
   background-color: var(--color-3);
 }
 
@@ -22,12 +20,12 @@ section.projects .title::after {
 .card {
   max-width: 350px;
   background-color: var(--color-2);
-  border: solid 1px var(--color-p2);
+  border: solid 1px var(--color-p5);
 }
 
 .card h3 {
   color: var(--color-1);
-  background-color: var(--color-p2);
+  background-color: var(--color-p5);
   padding: 5px;
   text-align: center;
   font-weight: 600;
