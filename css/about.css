@@ -40,7 +40,7 @@ ul.about-social ion-icon:hover{
   height: 45px;
 }
 
-.about-text-content {
+.about-text-content h3{
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -51,10 +51,9 @@ ul.about-social ion-icon:hover{
 } 
 
 .about-content-right {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 } 
 
 .about-text p {
@@ -67,7 +66,9 @@ ul.about-social ion-icon:hover{
 }
 
 .skills ul {
-  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .skills li {
@@ -84,11 +85,6 @@ ul.about-social ion-icon:hover{
 
 .about-content-right a.button{
   margin: auto;
-}
-.skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 
