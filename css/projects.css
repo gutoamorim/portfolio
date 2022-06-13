@@ -15,37 +15,64 @@
 }
 
 .card {
-  max-width: 350px;
+  max-width: 350px; 
+  border-radius: 10px; 
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-image {
   background-color: var(--color-2);
-  border: solid 1px var(--color-p5);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
 }
 
-.card h3 {
-  color: var(--color-1);
-  background-color: var(--color-p5);
-  padding: 5px;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-.card-content {
-  padding: 1rem;
-  color: var(--color-p0);
-}
-
-.card-content ul {
+.card-image ul {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 15px;
   gap: 5px;
 }
 
-.card-content li {
-  border: 1px solid var(--color-p1);
-  padding: 0 20px;
+.card-image li {
+  border: 1px solid var(--color-p5);
+  padding: 3px 20px;
   border-radius: 10px;
 }
 
-.card-content p {
+.card h3 {
+  color: var(--color-1);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: var(--color-3);
+}
+
+
+.card p {
   margin-top: 15px;
+}
+
+.card-footer {
+  background-color: var(--color-2);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-footer ul{
+  justify-content: space-around;
+}
+
+.card-footer li ion-icon{
+  color: var(--color-3);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+
+.card-footer li ion-icon:hover{
+  color: var(--color-p5);
 }
