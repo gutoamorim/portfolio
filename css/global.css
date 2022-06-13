@@ -122,19 +122,19 @@ p {
 
 .button {
   display: inline-block;
-  background: var(--color-4);
+  background: var(--color-p5);
   font-size: 18px;
   padding: 12px 36px;
   border-radius: 6px;
   color: var(--color-1);
   margin-top: 20px;
-  border: 2px solid var(--color-4);
+  border: 2px solid var(--color-p5);
   max-width: max-content;
   font-weight: 600;
 }
 
 .button:hover {
-  color: var(--color-4);
+  color: var(--color-p5);
   background: none;
 }
 
