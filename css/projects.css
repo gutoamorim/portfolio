@@ -4,9 +4,6 @@
 
 .projects .title::after {
   content: "click e confira";
-}
-
-section.projects .title::after {
   background-color: var(--color-3);
 }
 
