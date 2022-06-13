@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
     <title>Portfólio | Cesar Augusto</title>
 
     <meta
@@ -22,8 +25,12 @@
         <div class="logo">
           <a href="#home">Port<span>fólio</span></a>
         </div>
-        <nav>
-          <button id="btn-mobile">
+        <nav aria-label="primaria" >
+          <button id="btn-mobile"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-haspopup="true"
+          aria-label="Abrir menu">
             <span id="hamburguer"></span>
           </button>
           <ul class="menu">
@@ -45,7 +52,7 @@
           <a class="button" href="#contact">Contratar-me</a>
         </div>
         <div class="home-right">
-          <img src="./img/programmer-animate.svg" alt="Ilustração de um programador" />
+          <img src="./img/programmer-animate.svg" alt="Ilustração de um programador" width="390" height="390" /> 
         </div>
       </div>
     </section>
@@ -54,7 +61,7 @@
       <h2 class="title">Sobre</h2>
       <div class="container">
         <div class="about-left">
-          <img src="./img/profile.jpg" alt="Minha foto de perfil" />
+          <img src="./img/profile.jpg" alt="Minha foto de perfil" width="300" height="300"/>
           <ul class="about-social">
             <li>
               <a href="https://github.com/gutoamorim" target="_blank"
@@ -95,39 +102,31 @@
             <h3>Habilidades</h3>
             <ul>
               <li>
-                <img src="./img/icons/html5-original.svg" alt="Logo HTML" /><span
-                  >HTML</span
-                >
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
               </li>
               <li>
-                <img src="./img/icons/css3-original.svg" alt="Logo CSS" /><span
-                  >CSS</span
-                >
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
               </li>
               <li>
-                <img src="./img/icons/javascript-original.svg" alt="Logo Javascript" /><span
-                  >Javascript</span
-                >
+                <i class="devicon-javascript-plain colored"></i>     
+                <span>Javascript</span>
               </li>
               <li>
-                <img src="./img/icons/react-original.svg" alt="Logo React" /><span
-                  >React JS</span
-                >
-              </li>
-              <!-- <li><img src="./img/icons/angularjs-original.svg" alt=""><span>Angular</span></li> -->
-              <li>
-                <img src="./img/icons/nodejs-original.svg" alt="Logo NodeJS" /><span
-                  >Node JS</span
-                >
+                <i class="devicon-react-original colored"></i>
+                <span>React JS</span>
               </li>
               <li>
-                <img src="./img/icons/firebase-plain.svg" alt="Logo Firebase" /><span
-                  >Firebase</span
-                >
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node JS</span>
+              </li>
+              <li>
+                <i class="devicon-firebase-plain colored"></i>
+                <span>Firebase</span>
               </li>
             </ul>
           </div>
-          <!-- <a class="button" href="#">Download CV</a> -->
         </div>
       </div>
     </section>
@@ -137,10 +136,10 @@
       <div class="container">
         <div class="card">
           <div class="card-image">
-            <img src="./img/projects/bikcraft.png" alt="print do projeto bikcraft" />
+            <img src="./img/projects/_bikcraft.png" alt="printscream do prjeto bikcraft">
             <ul>
               <li>HTML</li>
-              <li>CSS</li>  
+              <li>CSS</li>
               <li>Javascript</li>
             </ul>
           </div>

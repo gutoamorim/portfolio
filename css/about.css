@@ -79,8 +79,8 @@ ul.about-social ion-icon:hover {
   gap: 10px;
 }
 
-.about-skills li img {
-  height: 3rem;
+.about-skills li i{
+ font-size: 3rem;
 }
 
 .about-right a.button {
