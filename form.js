@@ -4,13 +4,15 @@ const modal = document.querySelector('#contact-modal')
 
 function formularioEnviado(resposta) {
   if(resposta.ok) {
+    h2.classList.add('success')
     modal.classList.add('show')
   }else {
     const h2 = document.querySelector('.modal-title')
     const p = document.querySelector('.modal-text')
-    h2.innerText = 'Erro no envio'
-    p.innerText = 'você pode enviar diretamente para o nosso e-mail em: bikcraft@cesaraugusto.dev'
-    // formulario.innerHTML = '<p class="font-2-l" style="grid-column: 1 / -1; padding: 1rem; border-radius: 4px; background: #f7f7f7"><span style="color:#E00000">Erro no envio,</span> você pode enviar diretamente para o nosso e-mail em: bikcraft@cesaraugusto.dev</p>'
+    h2.classList.add('error')
+    h2.innerHTML = 'Erro no envio'
+    p.innerHTML = 'Você pode enviar diretamente para o nosso e-mail em: <a href="mailto: contato@cesaraugusto.dev">contato@cesaraugusto.dev</a>'
+    modal.classList.add('show')
   }
 }
 

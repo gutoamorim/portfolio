@@ -129,6 +129,7 @@
   background: rgba(34, 238, 0, .9);
 }
 
+
 .modal-container {
   width: 100vw;
   height: 100vh;
@@ -147,16 +148,15 @@
 }
 
 .modal {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  background-color: var(--color-2);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--color-1);
+  background-color: var(--color-p0);
   width: 50vw;
   min-width: 300px;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0px 10px 40px rgba(red, green, blue, alpha);
 }
 
 @keyframes modal {
@@ -175,18 +175,33 @@
 }
 
 .modal h2 {
-  text-align: center;
-  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal h2.success{
+  color: var(--color-p5);
+}
+
+.modal h2.error {
+  color: #ff0000;
 }
 
 .modal p {
+  color: var(--color-1);
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
-.modal a {
-  color: #000;
-  background-color: var(--color-p5);
+.modal p a{
+  color: var(--color-2);  
+}
+
+.modal a.closed {
+  color: var(--color-p0);
+  background-color: var(--color-3);
   padding: 8px 16px;
   align-self: flex-end;
   font-weight: 600;
