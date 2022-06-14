@@ -1,5 +1,9 @@
 const formulario = document.querySelector('form')
 
+function deuRuim() {
+  formulario.innerHTML = 'Deu ruim'
+}
+
 function formularioEnviado(resposta) {
   if(resposta.ok) {
     formulario.innerHTML = '<p class="font-2-l" style="grid-column: 1 / -1; padding: 1rem; border-radius: 4px; background: #f7f7f7"> <span style="color: #317a00">Mensagem enviada!</span> Em breve entraremos em contato. Geralmente respondemos em até 24h</p>'
@@ -19,7 +23,7 @@ function enviarFormulario(event) {
   fetch('./enviar.php', {
     method: 'POST',
     body: data
-  }).then(formularioEnviado)
+  }).then(formularioEnviado).catch(deuRuim)
 }
 
 formulario.addEventListener('submit', enviarFormulario)
