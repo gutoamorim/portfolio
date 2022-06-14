@@ -3,15 +3,16 @@ const formulario = document.querySelector('form')
 const modal = document.querySelector('#contact-modal')
 
 function formularioEnviado(resposta) {
-  if(resposta.ok) {
+  const h2 = document.querySelector('.modal-title')
+  const p = document.querySelector('.modal-text')
+  if (resposta.ok) {
     h2.classList.add('success')
     modal.classList.add('show')
-  }else {
-    const h2 = document.querySelector('.modal-title')
-    const p = document.querySelector('.modal-text')
+  } else {
     h2.classList.add('error')
     h2.innerHTML = 'Erro no envio'
-    p.innerHTML = 'Você pode enviar diretamente para o nosso e-mail em: <a href="mailto: contato@cesaraugusto.dev">contato@cesaraugusto.dev</a>'
+    p.innerHTML =
+      'Você pode enviar diretamente para o nosso e-mail em: <a href="mailto: contato@cesaraugusto.dev">contato@cesaraugusto.dev</a>'
     modal.classList.add('show')
   }
 }
@@ -20,10 +21,10 @@ function enviarFormulario(event) {
   event.preventDefault()
   const botao = document.querySelector('form button')
   botao.disabled = true
-  botao.innerText = "Enviando..."
+  botao.innerText = 'Enviando...'
 
   const data = new FormData(formulario)
-  
+
   fetch('./enviar.php', {
     method: 'POST',
     body: data
@@ -31,4 +32,3 @@ function enviarFormulario(event) {
 }
 
 formulario.addEventListener('submit', enviarFormulario)
-
