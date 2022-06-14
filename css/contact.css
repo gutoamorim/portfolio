@@ -31,6 +31,7 @@
 }
 
 .form {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -149,7 +150,6 @@
 
 .modal {
   font-family: 'Ubuntu', sans-serif;
-  color: var(--color-1);
   background-color: var(--color-p0);
   width: 50vw;
   min-width: 300px;
@@ -175,23 +175,22 @@
 }
 
 .modal h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .modal h2.success{
-  color: var(--color-p5);
+  color: var(--color-p4);
 }
 
 .modal h2.error {
   color: #ff0000;
 }
 
-.modal p {
-  color: var(--color-1);
+.modal p.modal-text {
+  color: var(--color-2);
   font-weight: 600;
   line-height: 1.5;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -201,11 +200,16 @@
 
 .modal a.closed {
   color: var(--color-p0);
-  background-color: var(--color-3);
+  background-color: var(--color-2);
   padding: 8px 16px;
   align-self: flex-end;
   font-weight: 600;
   border-radius: 6px;
+  transition: .3s;
+}
+
+.modal a.closed:hover {
+  background-color: var(--color-1);
 }
 
 

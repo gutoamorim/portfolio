@@ -20,8 +20,8 @@ function formularioEnviado(resposta) {
 function enviarFormulario(event) {
   event.preventDefault()
   const botao = document.querySelector('form button')
-  botao.disabled = true
   botao.innerText = 'Enviando...'
+  botao.disabled = true
 
   const data = new FormData(formulario)
 
