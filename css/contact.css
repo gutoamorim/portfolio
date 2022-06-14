@@ -129,8 +129,12 @@
     grid-template-columns: 1fr;
   }
 
-  .contact-left img {
-    max-width: 50vw;
+  .contact-left {
     margin: auto;
+    padding: 0;
+  }
+
+  .contact-left img {
+    width: 50vw;
   }
 }
