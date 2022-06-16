@@ -18,10 +18,10 @@ $('.scroll-up-btn').click(function () {
 })
 
 var typed = new Typed('.typing', {
-  strings: ['Front End development Student', 'Back End development Student', 'Freelancer'],
+  strings: ['Full Stack devoper student'],
   typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
+  // backSpeed: 60,
+  // loop: true
 })
 
 const btnMobile = document.querySelector('#btn-mobile')
