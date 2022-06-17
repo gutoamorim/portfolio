@@ -1,6 +1,6 @@
 const formulario = document.querySelector('form')
-
 const modal = document.querySelector('#contact-modal')
+const close = document.querySelector('.closed')
 
 function formularioEnviado(resposta) {
   const h2 = document.querySelector('.modal-title')
@@ -15,6 +15,7 @@ function formularioEnviado(resposta) {
       'Você pode enviar diretamente para o nosso e-mail em: <a href="mailto: contato@cesaraugusto.dev">contato@cesaraugusto.dev</a>'
     modal.classList.add('show')
   }
+  resetForm()
 }
 
 function enviarFormulario(event) {
@@ -31,4 +32,14 @@ function enviarFormulario(event) {
   }).then(formularioEnviado)
 }
 
+function closeModal() {
+  modal.classList.remove('show')
+}
+
+function resetForm() {
+  formulario.reset()
+}
+
 formulario.addEventListener('submit', enviarFormulario)
+close.addEventListener('click', closeModal)
+
