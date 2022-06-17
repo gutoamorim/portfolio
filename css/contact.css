@@ -208,6 +208,7 @@
   font-weight: 600;
   border-radius: 6px;
   transition: .3s;
+  cursor: pointer;
 }
 
 .modal span.closed:hover {
