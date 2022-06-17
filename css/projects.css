@@ -42,7 +42,7 @@
 .card h3 {
   color: var(--color-p5);
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 3px;
 }
 
@@ -71,7 +71,6 @@
   font-size: 2rem;
   transition: all 0.3s ease;
 }
-
 
 .card-footer li ion-icon:hover{
   color: var(--color-p5);
