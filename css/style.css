@@ -1,8 +1,8 @@
 @import  "./global.css";
+@import  "./componentes.css";
+@import  "./tipografia.css";
 
 @import  "./header.css";
-
-/* sections */
 @import  "./home.css";
 @import  "./about.css";
 @import  "./projects.css";
