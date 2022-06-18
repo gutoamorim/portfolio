@@ -9,7 +9,7 @@
 .about .container {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 30px;
+  gap: 50px;
 }
 
 .about-left img {
