@@ -1,10 +1,11 @@
 .contact {
-  background-color: var(--color-2);
+  background-color: var(--color-5);
   position: relative;
 }
 
 .contact .title::after {
   content: 'fale comigo';
+  background-color: var(--color-5);
 }
 
 .contact .container {
@@ -23,7 +24,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px 35px;
-  background-color: var(--color-2);
+  background-color: var(--color-5);
   border-radius: 20px;
   max-width: 600px;
   box-shadow: 0px 10px 40px #00000056;
@@ -60,8 +61,8 @@
   font-family: 'Roboto', sans-serif;
   padding: 1rem;
   width: 100%;
-  border: 2px solid var(--color-3);
-  background-color: var(--color-3);
+  border: 2px solid var(--color-4);
+  background-color: var(--color-4);
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
@@ -73,7 +74,7 @@
 .label::before {
   content: '';
   height: 5px;
-  background-color: var(--color-3);
+  background-color: var(--color-4);
   position: absolute;
   left: 0;
   top: 10px;
@@ -152,7 +153,7 @@
 
 .modal {
   font-family: 'Ubuntu', sans-serif;
-  background-color: var(--color-p0);
+  background-color: var(--color-5);
   width: 50vw;
   min-width: 300px;
   padding: 24px;
@@ -180,24 +181,16 @@
   text-align: center;
 }
 
-.modal h2.success{
-  color: var(--color-p4);
-}
-
 .modal h2.error {
   color: #ff0000;
 }
 
 .modal p.modal-text {
-  color: var(--color-2);
+  color: var(--color-0);
   font-weight: 600;
   line-height: 1.5;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.modal p span{
-  color: var(--color-2);  
 }
 
 .modal span.closed {
@@ -212,9 +205,8 @@
 }
 
 .modal span.closed:hover {
-  background-color: var(--color-1);
+  background-color: var(--color-3);
 }
-
 
 @media(max-width: 900px){
   .contact .container {

@@ -1,18 +1,3 @@
-:root {
-  --color-1: #201b2c;
-  --color-2: #2f2841;
-  --color-3: #514869;
-  --color-4: #9457f0;
-  --color-5: #8c3ff1;
-  --color-6: #b491ff;
-  --color-p0: #f0ffffde;
-  --color-p1: #77ffc0;
-  --color-p2: #00ff88;
-  --color-p3: #48d06d;
-  --color-p4: #00cc66;
-  --color-p5: #22ee00;
-}
-
 * {
   margin: 0;
   padding: 0;
