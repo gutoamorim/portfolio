@@ -42,7 +42,7 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
 
-const section = document.querySelectorAll('.section')
+const sections = document.querySelectorAll('.section')
 
 function closeMenu() {
   nav.classList.toggle('active')
@@ -52,4 +52,4 @@ function navigateSection(section) {
   section.addEventListener('click', closeMenu)
 }
 
-section.forEach(navigateSection)
+sections.forEach(navigateSection)

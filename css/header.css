@@ -64,7 +64,7 @@ nav li a:hover {
     width: 100%;
     top: 50px;
     right: 0px;
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     padding: 1rem;
     transition: .6s;
     z-index: 2;
