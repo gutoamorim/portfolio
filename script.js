@@ -18,7 +18,7 @@ $('.scroll-up-btn').click(function () {
 })
 
 var typed = new Typed('.typing', {
-  strings: ['Full Stack devoper student'],
+  strings: ['Full Stack development student'],
   typeSpeed: 100,
   // backSpeed: 60,
   // loop: true
@@ -42,14 +42,14 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
 
-const sections = document.querySelectorAll('.section')
+const routes = document.querySelectorAll('.route')
 
 function closeMenu() {
-  nav.classList.toggle('active')
+  nav.classList.remove('active')
 }
 
-function navigateSection(section) {
-  section.addEventListener('click', closeMenu)
+function navigateSection(route) {
+  route.addEventListener('click', closeMenu)
 }
 
-sections.forEach(navigateSection)
+routes.forEach(navigateSection)
