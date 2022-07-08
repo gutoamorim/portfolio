@@ -19,7 +19,7 @@ $('.scroll-up-btn').click(function () {
 
 var typed = new Typed('.typing', {
   strings: ['Front end development student'],
-  typeSpeed: 100,
+  typeSpeed: 100
   // backSpeed: 60,
   // loop: true
 })
@@ -54,16 +54,17 @@ function navigateSection(route) {
 
 routes.forEach(navigateSection)
 
-const sections = document.querySelectorAll('.js-scroll')
+const contents = document.querySelectorAll('.js-scroll')
 const windowMetade = window.innerHeight
 
 function animaScroll() {
-  sections.forEach((section)=> {
-    const sectionTop = section.getBoundingClientRect().top - windowMetade
-    if(sectionTop < 0) {
-      section.classList.add('ativo')
+  contents.forEach(content => {
+    const sectionTop = content.getBoundingClientRect().top - windowMetade
+    if (sectionTop < 0) {
+      content.classList.add('ativo')
     }
   })
 }
+
 animaScroll()
 window.addEventListener('scroll', animaScroll)
