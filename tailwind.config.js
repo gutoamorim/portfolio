@@ -7,7 +7,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-image": "url('/aseets/hero-bg.png')",
+        "hero-image": "url('src/assets/hero-bg.png')",
       },
       fontFamily: {
         mono: ["IBM Plex Mono", "sans-serif"],
