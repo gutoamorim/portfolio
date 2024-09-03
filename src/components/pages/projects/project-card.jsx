@@ -19,7 +19,7 @@ export const ProjectCard = ({
           width={420}
           height={304}
           alt={`Thumbnail do projeto ${name}`}
-          className=" h-[200px] sm:h-[300px] object-cover rounded-lg"
+          className=" h-[200px] sm:h-[300px] object-cover rounded-lg mx-auto"
         />
       </div>
 
