@@ -4,7 +4,6 @@ import { Skils } from "./components/pages/skils";
 import { Projects } from "./components/pages/projects";
 import { Contact } from "./components/pages/contact";
 import { Footer } from "./components/footer";
-import { ToTop } from "./components/to-top";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <ToTop />
     </>
   );
 }

@@ -7,6 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { fadeUpAnimation } from "../../../lib/animations";
 
+import emailjs from "@emailjs/browser";
+
 const schema = z.object({
   name: z.string().min(1, "O campo nome é obrigatório"),
   email: z
@@ -24,13 +26,35 @@ export const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(schema),
   });
 
-  function onSubmit(data) {
-    console.log(data);
+  function sendEmail(data) {
+    const templateParams = {
+      from_name: data.name,
+      message: data.message,
+      email: data.email,
+    };
+
+    emailjs
+      .send(
+        "service_7a8xky2",
+        "template_t9eleko",
+        templateParams,
+        "PYxjNKizKo2tPBKuV"
+      )
+      .then(
+        (response) => {
+          console.log("E-mail enviado");
+          reset();
+        },
+        (err) => {
+          console.log("ERRO: ", err);
+        }
+      );
   }
 
   return (
@@ -46,7 +70,7 @@ export const Contact = () => {
 
         <motion.form
           className="mt-12 w-full flex flex-col gap-4"
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(sendEmail)}
           {...fadeUpAnimation}
           transition={{ duration: 0.5 }}
         >
