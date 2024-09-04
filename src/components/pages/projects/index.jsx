@@ -26,7 +26,7 @@ const PROJECTS = [
 
 export const Projects = () => {
   return (
-    <section className="container py-16" id="projects">
+    <section className="container py-20" id="projects">
       <SectionTitle subtitle="portfolio" title="Projetos" />
 
       <div className="mt-[60px]">

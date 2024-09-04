@@ -3,6 +3,9 @@ import { TechBadge } from "../../tech-badge";
 import { TbExternalLink } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
 
+import { motion } from "framer-motion";
+import { fadeUpAnimation, techBadgeAnimation } from "../../../lib/animations";
+
 export const ProjectCard = ({
   img,
   name,
@@ -12,8 +15,20 @@ export const ProjectCard = ({
   urlGithub,
 }) => {
   return (
-    <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
-      <div className="w-full h-full">
+    <motion.div
+      className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="w-full h-full"
+        initial={{ opacity: 0, y: 100, scale: 0.5 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
         <img
           src={img}
           width={420}
@@ -21,18 +36,33 @@ export const ProjectCard = ({
           alt={`Thumbnail do projeto ${name}`}
           className=" h-[200px] sm:h-[300px] object-cover rounded-lg mx-auto"
         />
-      </div>
+      </motion.div>
 
       <div>
-        <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
+        <motion.h3
+          className="flex items-center gap-3 font-medium text-lg text-gray-50"
+          {...fadeUpAnimation}
+          transition={{ duration: 0.7 }}
+        >
           <img src={iconTitle} alt="" width={28} height={28} />
           {name}
-        </h3>
-        <p className="text-gray-400 my-6">{description}</p>
+        </motion.h3>
+        <motion.p
+          className="text-gray-400 my-6"
+          {...fadeUpAnimation}
+          transition={{ duration: 0.2, delay: 0.3 }}
+        >
+          {description}
+        </motion.p>
 
         <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
-          {techs.map((tech) => (
-            <TechBadge name={tech} key={tech} />
+          {techs.map((tech, i) => (
+            <TechBadge
+              name={tech}
+              key={tech}
+              {...techBadgeAnimation}
+              transition={{ duration: 0.3, delay: i * 0.3 }}
+            />
           ))}
         </div>
         <div className="flex items-center justify-around sm:justify-start sm:gap-10">
@@ -54,6 +84,6 @@ export const ProjectCard = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -4,6 +4,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
+import { motion } from "framer-motion";
+import { fadeUpAnimation } from "../../../lib/animations";
+
 const schema = z.object({
   name: z.string().min(1, "O campo nome é obrigatório"),
   email: z
@@ -31,16 +34,21 @@ export const Contact = () => {
   }
 
   return (
-    <section className="py-16 px-6 md:py-34 flex items justify-center bg-gray-950">
+    <section
+      className="py-20 px-6 md:py-34 flex items justify-center bg-gray-950"
+      id="contact"
+    >
       <div className="w-full max-w-[420px] mx-auto">
         <SectionTitle
           subtitle="contato"
           title="Vamos trabalhar juntos? Entre em contato."
         />
 
-        <form
+        <motion.form
           className="mt-12 w-full flex flex-col gap-4"
           onSubmit={handleSubmit(onSubmit)}
+          {...fadeUpAnimation}
+          transition={{ duration: 0.5 }}
         >
           <input
             type="text"
@@ -82,7 +90,7 @@ export const Contact = () => {
           <Button className="mt-6" type="submit">
             Enviar mensagem
           </Button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );
