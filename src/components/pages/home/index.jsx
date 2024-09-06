@@ -30,7 +30,7 @@ const SOCIAL = [
 export const Home = () => {
   return (
     <sectioon
-      className="w-full min-h-dvh bg-hero-image bg-cover bg-center bg-no-repeat flex"
+      className="w-full min-h-dvh bg-hero-image bg-cover bg-center bg-no-repeat flex mt-16 lg:mt-0"
       id="home"
     >
       <div className="container flex items-center justify-center pt-10 gap-5 md:justify-between flex-col-reverse md:flex-row md:gap-6">
@@ -44,9 +44,12 @@ export const Home = () => {
           <p className="font-mono text-emerald-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">Cesar Augusto</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Sou desenvolvedor front-end apaixonado por tecnologia. Atualmente
-            curso Análise e Desenvolvimento de Sistemas com previsão de formação
-            em julho/2025.
+            Sou um desenvolvedor front-end apaixonado por tecnologia. <br />{" "}
+            Adoro desafios, e o fato de poder ajudar ou facilitar a vida de
+            alguém, me deixa animado. Sempre gostei de pensar em como resolver
+            problemas e agora posso fazer isso com linhas de código. <br />
+            Atualmente curso Análise e Desenvolvimento de Sistemas com previsão
+            de formação em julho/2025.
           </p>
 
           <div className="flex flex-col items-center md:items-start">

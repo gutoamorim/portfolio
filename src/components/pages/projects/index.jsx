@@ -1,24 +1,43 @@
 import { HorizontalDivider } from "../../divider/horizontal-divider";
 import { SectionTitle } from "../../section-title";
-import devfinances from "../../../assets/dev-finances.png";
 import { ProjectCard } from "./project-card";
+import devfinances from "../../../assets/dev-finances.png";
+import pokedex from "../../../assets/pokedex.png";
+import helpdesk from "../../../assets/help-desk.png";
+import webcarros from "../../../assets/web-carros.png";
 
 const PROJECTS = [
   {
     img: devfinances,
     name: "DevFinance$",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore quam dolore rem consequatur omnis dicta nesciunt aperiam placeat incidunt?",
+      "Sistema de controle financeiro com entradas, saídas, edição, deleção e filtro de transações.",
     techs: ["HTML", "CSS", "Javascript"],
     urlProject: "http://google.com",
     urlGithub: "http://google.com",
   },
   {
-    img: devfinances,
-    name: "DevFinance$",
+    img: pokedex,
+    name: "Pokedex",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore quam dolore rem consequatur omnis dicta nesciunt aperiam placeat incidunt?",
+      "Projeto de listagem de pokemos utilizando fetch, com consumo de dados da Poke APi",
     techs: ["HTML", "CSS", "Javascript"],
+    urlProject: "http://google.com",
+    urlGithub: "http://google.com",
+  },
+  {
+    img: helpdesk,
+    name: "Help Desk",
+    description: "Sistema de abertura e gerenciamento de chamados.",
+    techs: ["React", "Javascript", "Tailwind", "Firebase"],
+    urlProject: "http://google.com",
+    urlGithub: "http://google.com",
+  },
+  {
+    img: webcarros,
+    name: "Web Carros",
+    description: "Plataforma de anuncio de veículos inspirada na WebMotors.",
+    techs: ["React", "Typescript", "Tailwind", "Firebase"],
     urlProject: "http://google.com",
     urlGithub: "http://google.com",
   },

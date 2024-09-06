@@ -16,7 +16,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
+      className="flex flex-col lg:flex-row lg:items-center"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
@@ -34,11 +34,11 @@ export const ProjectCard = ({
           width={420}
           height={304}
           alt={`Thumbnail do projeto ${name}`}
-          className=" h-[200px] sm:h-[300px] object-cover rounded-lg mx-auto"
+          className=" h-[200px] sm:h-[300px] object-cover rounded-lg"
         />
       </motion.div>
 
-      <div>
+      <div className="w-full mt-6 lg:mt-0">
         <motion.h3
           className="flex items-center gap-3 font-medium text-lg text-gray-50"
           {...fadeUpAnimation}

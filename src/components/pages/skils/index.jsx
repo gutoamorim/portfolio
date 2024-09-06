@@ -6,6 +6,7 @@ import {
   TbBrandGit,
   TbBrandHtml5,
   TbBrandJavascript,
+  TbBrandTypescript,
   TbBrandNextjs,
   TbBrandReact,
   TbBrandTailwind,
@@ -26,6 +27,10 @@ const TECHS = [
   {
     name: "Javascript",
     icon: <TbBrandJavascript />,
+  },
+  {
+    name: "Typescript",
+    icon: <TbBrandTypescript />,
   },
   {
     name: "ReactJs",
