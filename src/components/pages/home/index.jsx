@@ -57,8 +57,12 @@ export const Home = () => {
               <a href="#contact">
                 <Button>Enter em contato </Button>
               </a>
-
-              <Button>Download CV</Button>
+              <a
+                href="https://1drv.ms/b/s!AgiNYBlax7sbu79ye_MkmIlxdrpi5w?e=95gosP"
+                target="_blank"
+              >
+                <Button>Download CV</Button>
+              </a>
             </div>
 
             <div className="text-3xl text-gray-600 flex items-center gap-3 h-20">
