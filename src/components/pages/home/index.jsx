@@ -10,19 +10,19 @@ import { motion } from "framer-motion";
 
 const SOCIAL = [
   {
-    url: "",
+    url: "https://github.com/gutoamorim",
     icon: <TbBrandGithub />,
   },
   {
-    url: "",
+    url: "https://www.linkedin.com/in/gutoamorim87/",
     icon: <TbBrandLinkedin />,
   },
   {
-    url: "",
+    url: "https://wa.me/5527997489072?text=Ol%C3%A1,%20estou%20vindo%20atrav%C3%A9s%20do%20link%20do%20seu%20portfolio.",
     icon: <TbBrandWhatsapp />,
   },
   {
-    url: "",
+    url: "mailto:gutoamorim@outlook.com",
     icon: <TbMail />,
   },
 ];
@@ -54,7 +54,10 @@ export const Home = () => {
 
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-4">
-              <Button>Entre em contato</Button>
+              <a href="#contact">
+                <Button>Enter em contato </Button>
+              </a>
+
               <Button>Download CV</Button>
             </div>
 
