@@ -13,8 +13,8 @@ const PROJECTS = [
     description:
       "Sistema de controle financeiro com entradas, saídas, edição, deleção e filtro de transações.",
     techs: ["HTML", "CSS", "Javascript"],
-    urlProject: "http://google.com",
-    urlGithub: "http://google.com",
+    urlProject: "https://cesaraugusto.dev/dev-finances/",
+    urlGithub: "https://github.com/gutoamorim/dev-finances",
   },
   {
     img: pokedex,
