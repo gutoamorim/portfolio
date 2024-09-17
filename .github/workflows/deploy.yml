@@ -1,30 +1,30 @@
-name: Deploy React App to Hostinger
+name: Deploy React App to HostGator
 
 on:
   push:
     branches:
-      - main
+      - main # Ou o branch que você preferir
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
-      - name: Install Node.js, npm and dependencies
+      - name: Install Node.js, npm, and dependencies
         uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
+          node-version: "18.x" # Certifique-se de usar a versão correta do Node.js
 
       - run: npm install
       - run: npm run build
 
-      - name: Deploy to Hostinger via FTP
+      - name: Deploy to HostGator via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_URL }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/
-          server-dir: /public_html/
+          server: ${{ secrets.FTP_URL }}# Substitua pelo servidor FTP correto
+          username: ${{ secrets.FTP_USERNAME }} # O nome de usuário de FTP
+          password: ${{ secrets.FTP_PASSWORD }} # A senha de FTP
+          local-dir: dist/ # Pasta gerada pelo Vite
+          server-dir: /public_html/ # Diretório onde você quer hospedar os arquivos
