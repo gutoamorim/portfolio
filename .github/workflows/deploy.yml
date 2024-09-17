@@ -3,7 +3,7 @@ name: Deploy React App to HostGator
 on:
   push:
     branches:
-      - main # Ou o branch que você preferir
+      - main
 
 jobs:
   deploy:
@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js, npm, and dependencies
         uses: actions/setup-node@v2
         with:
-          node-version: "18.x" # Certifique-se de usar a versão correta do Node.js
+          node-version: "18.x"
 
       - run: npm install
       - run: npm run build
@@ -23,8 +23,8 @@ jobs:
       - name: Deploy to HostGator via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_URL }}# Substitua pelo servidor FTP correto
-          username: ${{ secrets.FTP_USERNAME }} # O nome de usuário de FTP
-          password: ${{ secrets.FTP_PASSWORD }} # A senha de FTP
-          local-dir: dist/ # Pasta gerada pelo Vite
-          server-dir: /public_html/ # Diretório onde você quer hospedar os arquivos
+          server: ${{ secrets.FTP_URL }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/
+          server-dir: /public_html/
