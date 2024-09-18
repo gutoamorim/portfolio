@@ -13,7 +13,7 @@ const PROJECTS = [
     description:
       "Sistema de controle financeiro com entradas, saídas, edição, deleção e filtro de transações.",
     techs: ["HTML", "CSS", "Javascript"],
-    urlProject: "https://cesaraugusto.dev/dev-finances/",
+    urlProject: "https://devfinances.cesaraugusto.dev/",
     urlGithub: "https://github.com/gutoamorim/dev-finances",
   },
   {
@@ -22,24 +22,24 @@ const PROJECTS = [
     description:
       "Projeto de listagem de pokemos utilizando fetch, com consumo de dados da Poke APi",
     techs: ["HTML", "CSS", "Javascript"],
-    urlProject: "http://google.com",
-    urlGithub: "http://google.com",
+    urlProject: "https://pokedex.cesaraugusto.dev/",
+    urlGithub: "https://github.com/gutoamorim/pokedex",
   },
   {
     img: helpdesk,
     name: "Help Desk",
     description: "Sistema de abertura e gerenciamento de chamados.",
     techs: ["React", "Javascript", "Tailwind", "Firebase"],
-    urlProject: "http://google.com",
-    urlGithub: "http://google.com",
+    urlProject: "https://helpdesk.cesaraugusto.dev/",
+    urlGithub: "https://github.com/gutoamorim/helpdesk",
   },
   {
     img: webcarros,
     name: "Web Carros",
     description: "Plataforma de anuncio de veículos inspirada na WebMotors.",
     techs: ["React", "Typescript", "Tailwind", "Firebase"],
-    urlProject: "http://google.com",
-    urlGithub: "http://google.com",
+    urlProject: "https://webcarros.cesaraugusto.dev/",
+    urlGithub: "https://github.com/gutoamorim/webcarros",
   },
 ];
 
