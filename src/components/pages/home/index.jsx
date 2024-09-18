@@ -7,8 +7,8 @@ import {
   TbMail,
 } from "react-icons/tb";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer"; // Use a biblioteca correta
-import { useRef } from "react";
+import { useInView } from "react-intersection-observer";
+import heroBg from "../../../assets/hero-bg.png";
 
 const SOCIAL = [
   {
@@ -38,9 +38,17 @@ export const Home = () => {
     triggerOnce: true,
   });
 
+  const sectionStyle = {
+    backgroundImage: `url(${heroBg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
     <section
-      className="w-full min-h-dvh bg-hero-image bg-cover bg-center bg-no-repeat flex mt-16 lg:mt-0"
+      style={sectionStyle}
+      className="w-full min-h-dvh bg-cover bg-center bg-no-repeat flex mt-16 lg:mt-0"
       id="home"
     >
       <div className="container flex items-center justify-center pt-10 gap-5 md:justify-between flex-col-reverse md:flex-row md:gap-6">

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import heroBg from "./src/assets/hero-bg.png";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -6,9 +7,6 @@ export default {
       sans: ["Inter", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        "hero-image": "url('src/assets/hero-bg.png')",
-      },
       fontFamily: {
         mono: ["IBM Plex Mono", "sans-serif"],
       },
