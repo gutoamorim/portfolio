@@ -55,7 +55,7 @@ export const Home = () => {
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-4">
               <a href="#contact">
-                <Button>Enter em contato </Button>
+                <Button>Entre em contato</Button>
               </a>
               <a
                 href="https://1drv.ms/b/s!AgiNYBlax7sbu79ye_MkmIlxdrpi5w?e=95gosP"
