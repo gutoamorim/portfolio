@@ -4,7 +4,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
 
 import { motion } from "framer-motion";
-import { fadeUpAnimation, techBadgeAnimation } from "../../../lib/animations";
+import { useInView } from "react-intersection-observer";
 
 export const ProjectCard = ({
   img,
@@ -14,19 +14,39 @@ export const ProjectCard = ({
   urlProject,
   urlGithub,
 }) => {
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: true,
+  });
+
+  const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: true,
+  });
+
+  const { ref: ref3, inView: inView3 } = useInView({
+    triggerOnce: true,
+  });
+
+  const { ref: ref4, inView: inView4 } = useInView({
+    triggerOnce: true,
+  });
+
+  const { ref: ref5, inView: inView5 } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <motion.div
+      ref={ref1}
       className="flex flex-col lg:flex-row lg:items-center"
       initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 100 }}
+      animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
       <motion.div
+        ref={ref2}
         className="w-full h-full"
         initial={{ opacity: 0, y: 100, scale: 0.5 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0, y: 100 }}
+        animate={inView2 ? { opacity: 1, y: 0, scale: 1 } : {}}
         transition={{ duration: 0.3, delay: 0.3 }}
       >
         <img
@@ -40,16 +60,20 @@ export const ProjectCard = ({
 
       <div className="w-full mt-6 lg:mt-0">
         <motion.h3
+          ref={ref3}
           className="flex items-center gap-3 font-medium text-lg text-gray-50"
-          {...fadeUpAnimation}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
           <img src={iconTitle} alt="" width={28} height={28} />
           {name}
         </motion.h3>
         <motion.p
+          ref={ref4}
           className="text-gray-400 my-6"
-          {...fadeUpAnimation}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView4 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.2, delay: 0.3 }}
         >
           {description}
@@ -58,13 +82,16 @@ export const ProjectCard = ({
         <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
           {techs.map((tech, i) => (
             <TechBadge
+              ref={ref5}
               name={tech}
               key={tech}
-              {...techBadgeAnimation}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={inView5 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.3, delay: i * 0.3 }}
             />
           ))}
         </div>
+
         <div className="flex items-center justify-around sm:justify-start sm:gap-10">
           <a
             href={urlProject}
