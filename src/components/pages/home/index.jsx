@@ -75,7 +75,7 @@ export const Home = () => {
                 <Button>Entre em contato</Button>
               </a>
               <a
-                href="https://1drv.ms/b/s!AgiNYBlax7sbu79ye_MkmIlxdrpi5w?e=95gosP"
+                href="https://www.dropbox.com/scl/fi/tekoc28bidi8j5aumzwj5/CV-Cesar.pdf?rlkey=ncsj1ol9mx3u79ua1z8f9eo7u&st=65ut98ic&dl=0"
                 target="_blank"
               >
                 <Button>Download CV</Button>
